@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Dashboard</h1>
+        <a href="index.html" class="btn">Logout</a>
+    </header>
+    <section class="dashboard">
+        <div class="user-info">
+            <h2>Welcome, <span id="user-name">John Doe</span>!</h2>
+            <p>Email: <span id="user-email">johndoe@example.com</span></p>
+        </div>
+        <div class="dashboard-sections">
+            <!-- Registered Events Section -->
+            <div class="section registered-events">
+                <h3>Your Registered Events</h3>
+                <div class="events" id="registered-events">
+                    <!-- Dynamically loaded registered events -->
+                </div>
+            </div>
+
+            <!-- Favorites Section -->
+            <div class="section favorites">
+                <h3>Your Favorite Events</h3>
+                <div class="events" id="favorite-events">
+                    <!-- Dynamically loaded favorite events -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
+
